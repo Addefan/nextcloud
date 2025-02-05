@@ -19,3 +19,9 @@ variable "sa_key_file_path" {
   description = "Путь к ключу сервисного аккаунта с ролью admin"
   default     = "~/.yc-keys/key.json"
 }
+
+variable "ssh_key_path" {
+  type        = string
+  description = "Путь к публичному ключу, который будет отправлен на сервер"
+  default     = "~/.ssh/vvot.pub"
+}
