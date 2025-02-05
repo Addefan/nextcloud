@@ -19,7 +19,7 @@ resource "yandex_compute_instance" "server" {
   }
 
   metadata = {
-    ssh-keys = "ubuntu:${file(var.ssh_key_path)}"
+    ssh-keys = "ubuntu:${file("${var.ssh_key_path}.pub")}"
   }
 }
 

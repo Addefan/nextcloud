@@ -22,6 +22,6 @@ variable "sa_key_file_path" {
 
 variable "ssh_key_path" {
   type        = string
-  description = "Путь к публичному ключу, который будет отправлен на сервер"
-  default     = "~/.ssh/vvot.pub"
+  description = "Путь к SSH-ключу для сервера"
+  default     = "~/.ssh/vvot"
 }

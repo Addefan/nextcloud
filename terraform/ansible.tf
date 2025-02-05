@@ -8,7 +8,7 @@ resource "local_file" "inventory_file" {
               ansible_host: ${yandex_compute_instance.server.network_interface[0].nat_ip_address}
               ansible_ssh_private_key_file: ${var.ssh_key_path}
   EOT
-  filename = "../ansible/inventory.yml"
+  filename = "../ansible/hosts.yml"
 }
 
 resource "null_resource" "apply_ansible" {
